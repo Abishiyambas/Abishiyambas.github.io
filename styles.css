@@ -77,7 +77,7 @@ h3 { font-size: 21px; letter-spacing: -.5px; }
 .profile { position: relative; isolation: isolate; max-width: 368px; width: 100%; justify-self: end; transform: rotate(2deg); }
 .profile::before { position: absolute; content: ""; inset: -15px 18px 14px -16px; border: 1px solid #3c4437; border-radius: var(--radius); transform: rotate(-5deg); z-index: -1; }
 .profile-image-wrap { position: relative; height: 348px; overflow: hidden; border-radius: var(--radius) var(--radius) 0 0; background: #364034; }
-.profile-image { width: 100%; height: 100%; object-fit: cover; object-position: 50% 56%; filter: grayscale(1) contrast(.96); }
+.profile-coming-soon { display: grid; place-items: center; width: 100%; height: 100%; color: var(--accent); font: 16px/1.5 var(--mono); letter-spacing: 1px; text-transform: uppercase; }
 .profile-image-wrap::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgb(16 18 16 / 0%) 55%, rgb(16 18 16 / 35%)); pointer-events: none; }
 .profile-corner { position: absolute; top: 16px; right: 16px; padding: 6px 11px; color: var(--accent); background: #171e16; border: 1px solid #526047; border-radius: 5px; font: 13px/1.5 var(--mono); }
 .profile-caption { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 20px; background: var(--surface-raised); border: 1px solid var(--border); border-top: 0; border-radius: 0 0 var(--radius) var(--radius); }
@@ -282,7 +282,6 @@ h3 { font-size: 21px; letter-spacing: -.5px; }
     .hero-linkedin { padding-left: 4px; font-size: 12px; gap: 8px; }
     .profile { justify-self: start; max-width: 340px; width: calc(100% - 20px); margin: 45px 10px 0; transform: rotate(1deg); }
     .profile-image-wrap { height: 270px; }
-    .profile-image { object-position: center 48%; }
     .profile-caption { padding: 16px 18px; }
     .profile-caption strong { font-size: 12px; }
     .profile-caption div > span { font-size: 10px; }
