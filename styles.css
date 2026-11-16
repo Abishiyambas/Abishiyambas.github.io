@@ -74,9 +74,10 @@ h3 { font-size: 21px; letter-spacing: -.5px; }
 .hero-description { color: var(--muted); max-width: 500px; margin-top: 14px; font-size: 15px; line-height: 1.85; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 29px; }
 .hero-linkedin { padding-inline: 10px; }
-.profile { position: relative; isolation: isolate; max-width: 368px; width: 100%; justify-self: end; transform: rotate(2deg); }
+.profile { position: relative; isolation: isolate; max-width: 350px; width: 100%; justify-self: end; transform: rotate(2deg); }
 .profile::before { position: absolute; content: ""; inset: -15px 18px 14px -16px; border: 1px solid #384356; border-radius: var(--radius); transform: rotate(-5deg); z-index: -1; }
 .profile-image-wrap { position: relative; height: 348px; overflow: hidden; border-radius: var(--radius) var(--radius) 0 0; background: #343e52; }
+.profile-image-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; transform: scale(1.25); transform-origin: 50% 0; }
 .profile-coming-soon { display: grid; place-items: center; width: 100%; height: 100%; color: var(--accent); font: 16px/1.5 var(--mono); letter-spacing: 1px; text-transform: uppercase; }
 .profile-image-wrap::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgb(15 18 24 / 0%) 55%, rgb(15 18 24 / 35%)); pointer-events: none; }
 .profile-corner { position: absolute; top: 16px; right: 16px; padding: 6px 11px; color: var(--accent); background: #161c27; border: 1px solid #475a75; border-radius: 5px; font: 13px/1.5 var(--mono); }
